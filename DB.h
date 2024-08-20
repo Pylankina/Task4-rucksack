@@ -4,9 +4,11 @@ using namespace std;
 class DB:public Parser{
 protected:
     vector<pair<double, int>> z; //удельная стоимость
-    int max;//максимальная ценность в итоге
+    int max;
     vector<bool> answer;
+    int res;
 public:
     DB(ifstream &f_in);
+    void function();
     void writting();
 };
