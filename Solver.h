@@ -6,6 +6,7 @@ struct node{
     int l;//уровень в дереве
     int P, W;//текущий вес и цена
     double lim;//граница
+    vector<bool> taken;
 };
 
 class Solver:public DB{
